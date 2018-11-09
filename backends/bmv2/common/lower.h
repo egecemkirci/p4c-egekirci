@@ -29,7 +29,7 @@ namespace BMV2 {
 class LowerExpressions : public Transform {
     P4::TypeMap* typeMap;
     // Cannot shift with a value larger than 8 bits
-    const int maxShiftWidth = 8;
+    const int maxShiftWidth = 16; //I could not shift header values when it was 8 beyond 256 bits
 
     const IR::Expression* shift(const IR::Operation_Binary* expression) const;
  public:
