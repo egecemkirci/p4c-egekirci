@@ -912,6 +912,8 @@ const IR::Expression* ProgramStructure::convertHashAlgorithm(
         result = v1model.algorithm.crc32_custom.Id();
     } else if (algorithm == "my_md5_64") {
         result = v1model.algorithm.my_md5_64.Id();
+    } else if (algorithm == "my_murmur32") {
+        result = v1model.algorithm.my_murmur32.Id();
     } else if (algorithm == "crc16") {
         result = v1model.algorithm.crc16.Id();
     } else if (algorithm == "crc16_custom") {
