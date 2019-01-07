@@ -133,6 +133,7 @@ enum HashAlgorithm {
     csum16,
     xor16,
     my_md5_64,
+    my_sha256,
     my_murmur32
 }
 
